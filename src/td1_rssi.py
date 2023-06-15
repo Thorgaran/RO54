@@ -86,6 +86,9 @@ with open("data/td1_result.csv", "w", newline='') as outputfile:
             row.append(round(fingerprint_sample.get_average_rssi(), 2))
         writer.writerow(row)
 
+print("td1_result.csv created successfully")
+
+# Debug
 """
 print("(" + str(database.db[1].position.x) + ", " + str(database.db[1].position.y) + ", " + str(database.db[1].position.z) + ")")
 for fingerprint_sample in database.db[1].sample.samples:
